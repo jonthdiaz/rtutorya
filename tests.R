@@ -1,0 +1,15 @@
+notas=c(74,56,72,40,82,76,72,87,81,50, 65, 62)
+sort(notas)
+order(notas)
+sum(notas)
+cumsum(notas)
+mean(notas)
+quantile(notas)
+sd(notas)
+x= matrix(c(15,10,25,45,10,20),nrow=2) 
+rownames(x) = c("Mujer", "Hombre")
+colnames(x) =c("bajo", "medio", "alto")
+barplot(x, main="Grafico de prueba", xlab="nivel economico",ylab="Frecuencias",
+        legend=rownames(x))
+mosaicplot(x, col=c("red","blue","green"), main="Grafico que relaciona el nivel economico",
+           xlab="genero", ylab="nivel economico")
